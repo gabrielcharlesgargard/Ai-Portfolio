@@ -17,7 +17,7 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:5173",
-  "https://ai-portfolio3.onrender.com"
+  "https://ai-portfolio-clg.vercel.app"
   ],
   credentials: true,
 }));
