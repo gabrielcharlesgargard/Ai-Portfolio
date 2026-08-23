@@ -17,7 +17,7 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:5173",
-  "https://ai-portfolio-1-ojjd.onrender.com"
+  "https://ai-portfolio1.onrender.com"
   ],
   credentials: true,
 }));
