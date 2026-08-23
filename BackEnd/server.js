@@ -15,7 +15,10 @@ const app = express();
 
 // MiddleWare
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: [
+    "http://localhost:5173",
+  "https://ai-portfolio-1-ojjd.onrender.com"
+  ],
   credentials: true,
 }));
 app.use(express.json({ limit: "1mb" }));
