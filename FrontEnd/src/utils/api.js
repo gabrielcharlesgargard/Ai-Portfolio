@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://ai-portfolio-x60y.onrender.com/api",
+  baseURL: "https://ai-portfolio-mynf.onrender.com/api",
   headers: {
     "Content-Type": "application/json",
   }
