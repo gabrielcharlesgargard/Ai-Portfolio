@@ -1,0 +1,14 @@
+import express from "express";
+import { optionAuth, requireAuth } from "../middleware/Auth.js";
+import { listPackages, createSession, verifySession, listHistory } from "../controllers/payment.controller.js";
+
+
+const paymentRouter = express.Router();
+
+paymentRouter.get("/packages", listPackages);
+paymentRouter.post("/create-checkout-session", requireAuth, createSession);
+
+paymentRouter.post("/verify-session", requireAuth, verifySession);
+paymentRouter.get("/history", requireAuth, listHistory);
+
+export default paymentRouter;

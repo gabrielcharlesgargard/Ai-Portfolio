@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+html.light {
+  color-scheme: light;
+}
+
+html.light body {
+  background-color: #F6F1E8;
+}
+
+/* smooth crossfade when switching themes */
+html.light, html.light * {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+html.light ::selection {
+  background: rgba(0,0,0,0.15);
+}
+
+/* thin scrollbar tuned for light bg */
+html.light ::-webkit-scrollbar { width: 10px; height: 10px; }
+html.light ::-webkit-scrollbar-track { background: transparent; }
+html.light ::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); border-radius: 999px; }
+
+/* ===== Auto-generated light theme overrides (v2, full scan) ===== */
+/* Page/panel background hex -> cream/white (with optional /NN alpha) */
+html.light .bg-\[\#08090a\] { background-color: rgb(246,241,232) !important; }
+html.light .bg-\[\#08090a\]\/80 { background-color: rgba(246,241,232,0.80) !important; }
+html.light .bg-\[\#08090a\]\/95 { background-color: rgba(246,241,232,0.95) !important; }
+html.light .bg-\[\#0a0b0c\] { background-color: rgb(255,255,255) !important; }
+html.light .bg-\[\#0c0d0f\] { background-color: rgb(251,248,241) !important; }
+html.light .bg-\[\#0c0d0f\]\/80 { background-color: rgba(251,248,241,0.80) !important; }
+html.light .bg-\[\#0c0d0f\]\/85 { background-color: rgba(251,248,241,0.85) !important; }
+html.light .bg-\[\#0f1011\] { background-color: rgb(239,232,216) !important; }
+html.light .bg-\[\#0f1011\]\/80 { background-color: rgba(239,232,216,0.80) !important; }
+html.light .bg-\[\#1a1b1f\] { background-color: rgb(231,223,200) !important; }
+/* Card surfaces (zinc) */
+html.light .bg-zinc-900\/80 { background-color: #FFFFFFE6 !important; }
+html.light .bg-zinc-950\/80 { background-color: #FBF8F1E6 !important; }
+/* Text opacity: white(on dark) -> black(on light), same % */
+html.light .text-white\/35:disabled { color: rgba(0,0,0,0.35) !important; }
+html.light .text-white\/40:disabled { color: rgba(0,0,0,0.40) !important; }
+html.light .text-white\/70:hover { color: rgba(0,0,0,0.70) !important; }
+html.light .text-white\/80:hover { color: rgba(0,0,0,0.80) !important; }
+html.light .placeholder\:text-white\/30 { color: rgba(0,0,0,0.30) !important; }
+html.light .text-white\/20 { color: rgba(0,0,0,0.20) !important; }
+html.light .text-white\/30 { color: rgba(0,0,0,0.30) !important; }
+html.light .text-white\/35 { color: rgba(0,0,0,0.35) !important; }
+html.light .text-white\/40 { color: rgba(0,0,0,0.40) !important; }
+html.light .text-white\/45 { color: rgba(0,0,0,0.45) !important; }
+html.light .text-white\/50 { color: rgba(0,0,0,0.50) !important; }
+html.light .text-white\/55 { color: rgba(0,0,0,0.55) !important; }
+html.light .text-white\/60 { color: rgba(0,0,0,0.60) !important; }
+html.light .text-white\/65 { color: rgba(0,0,0,0.65) !important; }
+html.light .text-white\/70 { color: rgba(0,0,0,0.70) !important; }
+html.light .text-white\/75 { color: rgba(0,0,0,0.75) !important; }
+html.light .text-white\/80 { color: rgba(0,0,0,0.80) !important; }
+html.light .text-white\/85 { color: rgba(0,0,0,0.85) !important; }
+/* Translucent panel backgrounds: white -> black (excludes near-solid 50/85/90) */
+html.light .bg-white\/10 { background-color: rgba(0,0,0,0.10) !important; }
+html.light .bg-white\/2 { background-color: rgba(0,0,0,0.02) !important; }
+html.light .bg-white\/3 { background-color: rgba(0,0,0,0.03) !important; }
+html.light .bg-white\/4 { background-color: rgba(0,0,0,0.04) !important; }
+html.light .bg-white\/5 { background-color: rgba(0,0,0,0.05) !important; }
+html.light .bg-white\/6 { background-color: rgba(0,0,0,0.06) !important; }
+html.light .bg-white\/8 { background-color: rgba(0,0,0,0.08) !important; }
+html.light .bg-white\/10:hover { background-color: rgba(0,0,0,0.10) !important; }
+html.light .bg-white\/4:hover { background-color: rgba(0,0,0,0.04) !important; }
+html.light .bg-white\/5:hover { background-color: rgba(0,0,0,0.05) !important; }
+html.light .bg-white\/6:hover { background-color: rgba(0,0,0,0.06) !important; }
+html.light .bg-white\/7:hover { background-color: rgba(0,0,0,0.07) !important; }
+html.light .bg-white\/8:hover { background-color: rgba(0,0,0,0.08) !important; }
+html.light .bg-white\/\[0\.04\] { background-color: rgba(0,0,0,0.04) !important; }
+html.light .bg-white\/\[0\.05\] { background-color: rgba(0,0,0,0.05) !important; }
+html.light .bg-white\/\[0\.07\]:hover { background-color: rgba(0,0,0,0.07) !important; }
+/* Borders */
+html.light .border-white\/10 { border-color: rgba(0,0,0,0.10) !important; }
+html.light .border-white\/15 { border-color: rgba(0,0,0,0.15) !important; }
+html.light .border-white\/5 { border-color: rgba(0,0,0,0.05) !important; }
+html.light .border-white\/6 { border-color: rgba(0,0,0,0.06) !important; }
+html.light .border-white\/8 { border-color: rgba(0,0,0,0.08) !important; }
+html.light .border-white\/18:focus-within { border-color: rgba(0,0,0,0.18) !important; }
+html.light .border-white\/20:focus { border-color: rgba(0,0,0,0.20) !important; }
+html.light .border-white\/25:focus { border-color: rgba(0,0,0,0.25) !important; }
+html.light .border-white\/12:hover { border-color: rgba(0,0,0,0.12) !important; }
+html.light .border-white\/16:hover { border-color: rgba(0,0,0,0.16) !important; }
+html.light .border-white\/20:hover { border-color: rgba(0,0,0,0.20) !important; }
+html.light .border-white\/\[0\.07\] { border-color: rgba(0,0,0,0.07) !important; }
+html.light .border-white\/\[0\.14\]:hover { border-color: rgba(0,0,0,0.14) !important; }
+/* Placeholders (both placeholder-white/N legacy utility and placeholder:text-white/N modifier) */
+html.light .placeholder-white\/20::placeholder { color: rgba(0,0,0,0.20) !important; }
+html.light .placeholder-white\/30::placeholder { color: rgba(0,0,0,0.30) !important; }
+html.light .placeholder-white\/35::placeholder { color: rgba(0,0,0,0.35) !important; }
+html.light .placeholder\:text-white\/30::placeholder { color: rgba(0,0,0,0.30) !important; }
+/* Primary text color (headings/body) */
+html.light .text-white:hover { color: #18140f !important; }
+html.light .text-white { color: #18140f !important; }
+
+/* ---- Fix-ups: text-white kept intentionally white on colored/dark chips, pills & avatars ---- */
+html.light .bg-indigo-500.text-white { color: #fff !important; }
+html.light .bg-emerald-500.text-white { color: #fff !important; }
+html.light .bg-emerald-500\/95.text-white { color: #fff !important; }
+html.light .from-indigo-500.to-violet-600.text-white { color: #fff !important; }
+html.light .bg-black\/40.text-white { color: #fff !important; }
